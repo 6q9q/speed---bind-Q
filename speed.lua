@@ -10,7 +10,7 @@ local normalSpeed = 16
 local boostedSpeed = 150
 
 UserInputService.InputBegan:Connect(function(input, gameProcessed)
-    if gameProcessed then return end -- Игнорируем, если игрок в чате или меню
+    if gameProcessed then return end -- Ignore if the player is in chat or the menu
 
     if input.KeyCode == Enum.KeyCode.Q then
         if humanoid then
